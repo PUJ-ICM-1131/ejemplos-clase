@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ListItem</string>
+    <string name="total_de_usuarios">Total de usuarios: %1$d</string>
+    <string name="total_usuarios">Total usuarios</string>
+</resources>
