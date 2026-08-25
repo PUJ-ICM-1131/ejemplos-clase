@@ -1,4 +1,4 @@
-**
+/**
  * Data Class: Genera automáticamente toString, equals, copy.
  * En Java requiere muchas líneas de código (POJO).
  */
