@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--
+        PERMISOS EN ANDROID
+        ══════════════════════════════════════════════════════════════════
+        Desde Android 6.0 (API 23) existen dos tipos de permisos:
+
+        1. NORMALES: Se declaran aquí y se conceden automáticamente en la
+           instalación. Ejemplo: INTERNET, VIBRATE.
+
+        2. PELIGROSOS (runtime): Se declaran aquí, pero TAMBIÉN se deben
+           solicitar en tiempo de ejecución. El usuario puede denegarlos.
+           Ejemplo: READ_CONTACTS, CAMERA, ACCESS_FINE_LOCATION.
+
+        READ_CONTACTS es un permiso PELIGROSO → solo con declararlo aquí
+        NO alcanza; la app debe pedirlo mientras corre (ver ContactsScreen).
+    -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Contactos">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Contactos">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
